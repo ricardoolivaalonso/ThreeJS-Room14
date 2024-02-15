@@ -48,10 +48,11 @@ function handleLoadRoom () {
 
 function handleLoadModels() {
     const video = document.createElement('video')
-    video.src = './video.mp4'
-    video.autoplay = true
-    video.loop = true
     video.muted = true
+    video.loop = true
+    video.autoplay = true
+    video.play()
+    video.src = './video.mp4'
     video.setAttribute("crossorigin", "anonymous")
 
     const videoTexture = new THREE.VideoTexture(video)
