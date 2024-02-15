@@ -51,8 +51,8 @@ function handleLoadModels() {
     video.muted = true
     video.loop = true
     video.autoplay = true
-    video.play()
     video.src = './video.mp4'
+    video.play()
     video.setAttribute("crossorigin", "anonymous")
 
     const videoTexture = new THREE.VideoTexture(video)
